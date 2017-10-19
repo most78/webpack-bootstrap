@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import logo from './webpack-logo.png';
+import Data from './data.xml';
 
 function component() {
   var element = document.createElement('div');
@@ -12,6 +13,8 @@ function component() {
   myLogo.src = logo;
 
   element.appendChild(myLogo);
+
+  console.log(Data);
 
   return element;
 }
